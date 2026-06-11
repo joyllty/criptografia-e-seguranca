@@ -1,0 +1,48 @@
+toda a criptografia RSA é baseada na aritmética modular
+
+codificar uma mensagem:
+"pré codificar" a mensagem -> oaep com mgf1 + sha256
+
+
+três etapas principais:
+-> geração de chaves
+-> cifragem
+-> decifragem
+
+--> geração de chaves:
+cria o conjunto de chaves publica e privada
+
+passo 1: escolher dois primos distintos p e q
+passo 2: calcular n = p * q
+passo 3: calcular fi(n) = (p - 1)(q - 1)
+passo 4: escolher o expoente público 'e'
+    - precisa obedecer a condição 1 < e < fi(n)
+    - deve ser coprimo com fi(n), ou seja, 'e' e fi não podem ter divisores em comum além do numero 1
+passo 5: calcular o expoente privado d
+    - deve satisfazer a condição: e x d = 1 mod fi(n)
+
+
+--> chaves finais
+- chave publica: (n, e)
+- chave privada: (n, d)
+
+
+--> cifragem e decifragem
+
+- cifragem:
+    - pra criptografar uma mensagem M, usamos a chave publica:
+    C = M^e mod n
+    onde:
+    - M = mensagem
+    - e = expoente publico
+    - n = parte da chave publica
+    - C = texto cifrado
+
+- decifragem:
+    - usamos a chave privada:
+    M = C^d mod n
+    onde:
+    - M = mensagem original
+    - C = mensagem criptografada
+    - d = expoente privado
+    - n = parte da chave privada
