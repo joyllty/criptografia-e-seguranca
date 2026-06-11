@@ -1,15 +1,15 @@
 # Entrega dos Códigos de Criptografia
 /RSA
-  • RSA:
-    - comando: main_rsa.py "sua_mensagem"
+  • RSA:<br>
+    - comando: main_rsa.py "sua_mensagem"<br><br>
         
-  • Chat com RSA: rodar chat_app.py em dois terminais
+  • Chat com RSA: rodar chat_app.py em dois terminais<br><br>
 
-/sha256
-  • SHA256:
-    - comando: python main_sha.py gerar "sua_mensagem"
+/sha256<br>
+  • SHA256:<br>
+    - comando: python main_sha.py gerar "sua_mensagem"<br><br>
   
-  • Autenticador:
-    - comandos:
-      - python main_autenticador.py gerar <arquivo.txt>
-      - python main_autenticador.py validar <arquivo.txt> <hash>
+  • Autenticador:<br>
+    - comandos:<br>
+      - python main_autenticador.py gerar <arquivo.txt><br>
+      - python main_autenticador.py validar <arquivo.txt> <hash><br>
