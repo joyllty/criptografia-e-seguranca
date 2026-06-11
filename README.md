@@ -6,7 +6,7 @@
         
   • Chat com RSA: rodar chat_app.py em dois terminais
 
-/sha256<br>
+/sha256
   • SHA256:
     - comando: python main_sha.py gerar "sua_mensagem"
   
