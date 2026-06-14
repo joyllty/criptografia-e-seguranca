@@ -5,7 +5,8 @@
     - comando: python main_rsa.py "sua_mensagem"
         
   • Chat com RSA:
-    - rodar chat_app.py em dois terminais com argumentos --name, --port (porta do remetente), -peer-port (porta do destinatário)
+    - rodar chat_app.py em dois terminais com argumentos --name, --port (porta do remetente),
+      -peer-port (porta do destinatário)
     - exemplo: python chat_app.py --name Bruna --port 5001 --peer-port 5002
 
 /sha256
